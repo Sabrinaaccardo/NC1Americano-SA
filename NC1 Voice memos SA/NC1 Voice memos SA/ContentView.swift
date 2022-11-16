@@ -8,12 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     @ObservedObject var audioRecorder: AudioRecorder
     
     
     var body: some View {
+        
         NavigationView {
+            
             VStack {
+                
+                Spacer()
+                
                 if audioRecorder.recording == false {
                     Button(action: {print("Start recording")}) {
                         Image(systemName: "circle.fill")
@@ -36,12 +42,16 @@ struct ContentView: View {
                     }
                 }
             }
+            
+            
             .navigationTitle("All Recordings")
+            
         }
         
-        
     }
+    
 }
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
