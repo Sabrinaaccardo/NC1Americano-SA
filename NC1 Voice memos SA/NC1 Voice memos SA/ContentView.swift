@@ -41,18 +41,18 @@ struct ContentView: View {
                             .padding(.bottom, 40)
                     }
                 }
-            }
+                
+                
+                
+            } //end of VStack
             
             
             .navigationTitle("All Recordings")
             
-        }
+        } // end of NavigationView
         
     }
-    
 }
-
-
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView(audioRecorder: AudioRecorder())
