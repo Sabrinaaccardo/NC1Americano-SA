@@ -18,8 +18,8 @@ struct ContentView: View {
             
             VStack {
                 
-                Spacer()
-                
+                Spacer() //tiene il record button giù
+
                 if audioRecorder.recording == false {
                     Button(action: {print("Start recording")}) {
                         Image(systemName: "circle.fill")
@@ -28,7 +28,10 @@ struct ContentView: View {
                             .frame(width: 100, height: 100)
                             .clipped()
                             .foregroundColor(.red)
-                            .padding(.bottom, 40)
+                            .overlay {
+                                        Circle().stroke(.gray, lineWidth: 4)
+                        } 
+                        
                     }
                 } else {
                     Button(action: {print("Stop recording)")}) {
@@ -38,7 +41,10 @@ struct ContentView: View {
                             .frame(width: 100, height: 100)
                             .clipped()
                             .foregroundColor(.red)
-                            .padding(.bottom, 40)
+                            .overlay {
+                                        Circle().stroke(.gray, lineWidth: 4)
+                        }
+                            
                     }
                 }
                 
