@@ -11,7 +11,7 @@ import SwiftUI
 struct NC1_Voice_memos_SAApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(audioRecorder: AudioRecorder())
         }
     }
 }
