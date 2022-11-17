@@ -18,19 +18,22 @@ struct ContentView: View {
             
             VStack {
                 
+                RecordingsList(audioRecorder: audioRecorder)
+                
                 Spacer() //tiene il record button giù
-
+                
                 if audioRecorder.recording == false {
                     Button(action: {print("Start recording")}) {
                         Image(systemName: "circle.fill")
                             .resizable()
+                            
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
+                            .frame(width: 80, height: 80)
                             .clipped()
                             .foregroundColor(.red)
                             .overlay {
-                                        Circle().stroke(.gray, lineWidth: 4)
-                        } 
+                                Circle().stroke(.gray, lineWidth: 4)
+                            }
                         
                     }
                 } else {
@@ -38,22 +41,20 @@ struct ContentView: View {
                         Image(systemName: "stop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 100, height: 100)
+                            .frame(width: 80, height: 80)
                             .clipped()
                             .foregroundColor(.red)
                             .overlay {
-                                        Circle().stroke(.gray, lineWidth: 4)
-                        }
-                            
+                                Circle().stroke(.gray, lineWidth: 4)
+                            }
+                        
                     }
                 }
                 
-                
-                
-            } //end of VStack
+            }//end of VStack
             
-            
-            .navigationTitle("All Recordings")
+            .listStyle(.plain)
+           .navigationTitle("All recordings")
             
         } // end of NavigationView
         
@@ -65,3 +66,4 @@ struct ContentView_Previews: PreviewProvider {
         
     }
 }
+
