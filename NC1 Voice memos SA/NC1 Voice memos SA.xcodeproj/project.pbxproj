@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		E2451EBC29253A0800DE8A0F /* Audio recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2451EBB29253A0800DE8A0F /* Audio recorder.swift */; };
 		E2451EBE29253E4B00DE8A0F /* RecordingsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */; };
-		E249219129268FB7005BE48C /* Recording1.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249219029268FB7005BE48C /* Recording1.swift */; };
+		E249219129268FB7005BE48C /* Recording1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = E249219029268FB7005BE48C /* Recording1View.swift */; };
 		E26B2685292520510058EC3C /* NC1_Voice_memos_SAApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B2684292520510058EC3C /* NC1_Voice_memos_SAApp.swift */; };
 		E26B2687292520510058EC3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B2686292520510058EC3C /* ContentView.swift */; };
 		E26B2689292520520058EC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26B2688292520520058EC3C /* Assets.xcassets */; };
@@ -19,7 +19,7 @@
 /* Begin PBXFileReference section */
 		E2451EBB29253A0800DE8A0F /* Audio recorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Audio recorder.swift"; sourceTree = "<group>"; };
 		E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingsList.swift; sourceTree = "<group>"; };
-		E249219029268FB7005BE48C /* Recording1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording1.swift; sourceTree = "<group>"; };
+		E249219029268FB7005BE48C /* Recording1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recording1View.swift; sourceTree = "<group>"; };
 		E26B2681292520510058EC3C /* NC1 Voice memos SA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC1 Voice memos SA.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E26B2684292520510058EC3C /* NC1_Voice_memos_SAApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_Voice_memos_SAApp.swift; sourceTree = "<group>"; };
 		E26B2686292520510058EC3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,8 +58,8 @@
 			isa = PBXGroup;
 			children = (
 				E26B2684292520510058EC3C /* NC1_Voice_memos_SAApp.swift */,
-				E249219029268FB7005BE48C /* Recording1.swift */,
 				E26B2686292520510058EC3C /* ContentView.swift */,
+				E249219029268FB7005BE48C /* Recording1View.swift */,
 				E2451EBB29253A0800DE8A0F /* Audio recorder.swift */,
 				E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */,
 				E26B2688292520520058EC3C /* Assets.xcassets */,
@@ -149,7 +149,7 @@
 				E26B2687292520510058EC3C /* ContentView.swift in Sources */,
 				E2451EBC29253A0800DE8A0F /* Audio recorder.swift in Sources */,
 				E26B2685292520510058EC3C /* NC1_Voice_memos_SAApp.swift in Sources */,
-				E249219129268FB7005BE48C /* Recording1.swift in Sources */,
+				E249219129268FB7005BE48C /* Recording1View.swift in Sources */,
 				E2451EBE29253E4B00DE8A0F /* RecordingsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

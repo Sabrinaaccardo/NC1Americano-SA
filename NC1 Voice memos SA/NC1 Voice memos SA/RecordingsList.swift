@@ -8,10 +8,12 @@
 import SwiftUI
 
 struct RecordingsList: View {
+    
     @ObservedObject var audioRecorder: AudioRecorder
     var body: some View {
+
         List {
-            
+           
             Text ("Recording 1")
             Text ("Recording 2")
             Text ("Recording 3")
@@ -25,7 +27,9 @@ struct RecordingsList: View {
             
         }
     }
+    
 }
+
 
 
 struct RecordingsList_Previews: PreviewProvider {

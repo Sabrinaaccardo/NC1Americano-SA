@@ -1,5 +1,5 @@
 //
-//  Recording1.swift
+//  Recording1View.swift
 //  NC1 Voice memos SA
 //
 //  Created by Sabrina Accardo on 17/11/22.
@@ -7,16 +7,30 @@
 
 import SwiftUI
 
+
+
 struct Voice_Memos: View {
+    
     var body: some View {
         VStack {
 
             Text("Recording 1")
                 .font(.largeTitle)
             .fontWeight(.bold)
+            
+           
                 
             .padding () //spazio tra il bezel e il title
+           
+            Spacer()
+            HStack{
+                Spacer()
+                Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
+                Spacer()
+      } // end of HStack
+            
             Spacer() //mette il title sopra
+            
             
                 
             }//end of VStack

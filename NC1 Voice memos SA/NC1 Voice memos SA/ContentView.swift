@@ -17,7 +17,6 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
-                
                 RecordingsList(audioRecorder: audioRecorder)
                 
                 Spacer() //tiene il record button giù
@@ -28,7 +27,7 @@ struct ContentView: View {
                             .resizable()
                             
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 80, height: 80)
+                            .frame(width: 70, height: 70)
                             .clipped()
                             .foregroundColor(.red)
                             .overlay {
@@ -41,7 +40,7 @@ struct ContentView: View {
                         Image(systemName: "stop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .frame(width: 80, height: 80)
+                            .frame(width: 70, height: 70)
                             .clipped()
                             .foregroundColor(.red)
                             .overlay {
@@ -53,9 +52,8 @@ struct ContentView: View {
                 
             }//end of VStack
             
-            .listStyle(.plain)
-           .navigationTitle("All recordings")
             
+            .navigationTitle("All recordings")
         } // end of NavigationView
         
     }
