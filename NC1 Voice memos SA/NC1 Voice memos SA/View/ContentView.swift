@@ -17,6 +17,7 @@ struct ContentView: View {
         NavigationView {
             
             VStack {
+                
                 RecordingsList(audioRecorder: audioRecorder)
                 
                 Spacer() //tiene il record button giù
@@ -25,7 +26,7 @@ struct ContentView: View {
                     Button(action: {print("Start recording")}) {
                         Image(systemName: "circle.fill")
                             .resizable()
-                            
+                        
                             .aspectRatio(contentMode: .fill)
                             .frame(width: 70, height: 70)
                             .clipped()
@@ -50,13 +51,24 @@ struct ContentView: View {
                     }
                 }
                 
+                
+                
             }//end of VStack
             
-            
             .navigationTitle("All recordings")
+            
+            .navigationBarItems(
+                trailing:
+                    HStack {
+                        EditButton()
+                    }
+            )
+            
         } // end of NavigationView
         
+        
     }
+    
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

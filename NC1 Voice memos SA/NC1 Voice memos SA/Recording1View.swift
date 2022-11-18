@@ -10,11 +10,11 @@ import SwiftUI
 
 
 struct Voice_Memos: View {
-    
+    @State var nome : String
     var body: some View {
         VStack {
 
-            Text("Recording 1")
+            Text(nome)
                 .font(.largeTitle)
             .fontWeight(.bold)
             
@@ -41,6 +41,6 @@ struct Voice_Memos: View {
 
 struct Voice_Memos_Previews: PreviewProvider {
     static var previews: some View {
-        Voice_Memos()
+        Voice_Memos(nome: "Recording 1")
     }
 }
