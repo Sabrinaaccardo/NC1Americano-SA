@@ -11,16 +11,15 @@ struct ContentView: View {
     
     @ObservedObject var audioRecorder: AudioRecorder
     
-    
     var body: some View {
         
         NavigationView {
             
             VStack {
                 
-                RecordingsList(audioRecorder: audioRecorder)
+                 RecordingsList(audioRecorder: audioRecorder)
                 
-                Spacer() //tiene il record button giù
+                 Spacer() //tiene il record button giù
                 
                 if audioRecorder.recording == false {
                     Button(action: {print("Start recording")}) {
@@ -34,9 +33,8 @@ struct ContentView: View {
                             .overlay {
                                 Circle().stroke(.gray, lineWidth: 4)
                             }
-                        
-                    }
-                } else {
+                       }
+                  } else {
                     Button(action: {print("Stop recording)")}) {
                         Image(systemName: "stop.fill")
                             .resizable()
@@ -47,28 +45,20 @@ struct ContentView: View {
                             .overlay {
                                 Circle().stroke(.gray, lineWidth: 4)
                             }
-                        
-                    }
-                }
-                
-                
-                
-            }//end of VStack
+                          }
+                        }
+             }//end of VStack
             
             .navigationTitle("All recordings")
-            
-            .navigationBarItems(
+               .navigationBarItems(
                 trailing:
                     HStack {
-                        EditButton()
-                    }
-            )
+                        EditButton() } // end of Hstack
+                
+               ) // closes navigationBarItems
             
-        } // end of NavigationView
-        
-        
+       } // end of NavigationView
     }
-    
 }
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
