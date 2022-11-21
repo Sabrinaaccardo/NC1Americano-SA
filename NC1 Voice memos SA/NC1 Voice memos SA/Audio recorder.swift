@@ -11,6 +11,7 @@ import Combine
 import AVFoundation
 class AudioRecorder: ObservableObject {
     
+    
     func startRecording() {
         let recordingSession = AVAudioSession.sharedInstance()
         do {

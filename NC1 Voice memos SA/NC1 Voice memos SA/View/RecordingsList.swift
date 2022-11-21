@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct RecordingsList: View {
+    
     @ObservedObject var audioRecorder: AudioRecorder
+    
     var body: some View {
         
         Form {

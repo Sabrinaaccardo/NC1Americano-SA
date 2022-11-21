@@ -14,10 +14,9 @@ struct ContentView: View {
     @ObservedObject var audioRecorder: AudioRecorder
     
     var body: some View {
-        
-        
+
         NavigationView {
-                        VStack {
+          VStack {
                 
                  RecordingsList(audioRecorder: audioRecorder)
                 
@@ -53,7 +52,7 @@ struct ContentView: View {
              }//end of VStack
             
             
-            .navigationTitle("All recordings")
+            .navigationTitle ("All recordings")
                .navigationBarItems(
                 trailing:
                     HStack {
