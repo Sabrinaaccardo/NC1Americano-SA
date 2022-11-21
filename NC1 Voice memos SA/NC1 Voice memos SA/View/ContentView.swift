@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+
+
 struct ContentView: View {
     
     @ObservedObject var audioRecorder: AudioRecorder
-    
     
     var body: some View {
         
@@ -36,7 +37,8 @@ struct ContentView: View {
                             }
                        }
                   } else {
-                    Button(action:  {print("Stop recording)")}) {
+                    Button(action: {self.audioRecorder.stopRecording()})
+                      {
                         Image(systemName: "stop.fill")
                             .resizable()
                             .aspectRatio(contentMode: .fill)

@@ -7,9 +7,9 @@
 
 import SwiftUI
 
-
-
 struct Voice_Memos: View {
+    @State var sliderValue : Float = 0.0
+
     @State var name : String
     var body: some View {
         VStack {
@@ -25,8 +25,8 @@ struct Voice_Memos: View {
             Spacer()
             HStack{
                 Spacer()
-                Slider(value: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant(10)/*@END_MENU_TOKEN@*/)
-                Spacer()
+                Slider(value: $sliderValue, in: 0...10)
+                
       } // end of HStack
             
             Spacer() //mette il title sopra

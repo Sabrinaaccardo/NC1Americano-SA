@@ -8,6 +8,7 @@
 import SwiftUI
 
 @main
+
 struct NC1_Voice_memos_SAApp: App {
     var body: some Scene {
         

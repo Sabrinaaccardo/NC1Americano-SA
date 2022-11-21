@@ -15,6 +15,8 @@
 		E26B2689292520520058EC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26B2688292520520058EC3C /* Assets.xcassets */; };
 		E26B268C292520520058EC3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26B268B292520520058EC3C /* Preview Assets.xcassets */; };
 		E2D25498292B8DEE0040CBD8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D25497292B8DEE0040CBD8 /* Extensions.swift */; };
+		E2F9F92A292BCD9200CC51D5 /* RecordingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9F929292BCD9200CC51D5 /* RecordingDataModel.swift */; };
+		E2F9F92C292BCF1800CC51D5 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9F92B292BCF1800CC51D5 /* Helper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,9 @@
 		E26B2688292520520058EC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26B268B292520520058EC3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E2D25497292B8DEE0040CBD8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		E2F9F929292BCD9200CC51D5 /* RecordingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingDataModel.swift; sourceTree = "<group>"; };
+		E2F9F92B292BCF1800CC51D5 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		E2F9F92D292BE19E00CC51D5 /* NC1-Voice-memos-SA-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "NC1-Voice-memos-SA-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +49,8 @@
 			isa = PBXGroup;
 			children = (
 				E26B2686292520510058EC3C /* ContentView.swift */,
+				E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */,
+				E249219029268FB7005BE48C /* Recording1View.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -67,12 +74,13 @@
 		E26B2683292520510058EC3C /* NC1 Voice memos SA */ = {
 			isa = PBXGroup;
 			children = (
+				E2F9F92D292BE19E00CC51D5 /* NC1-Voice-memos-SA-Info.plist */,
 				E26B2684292520510058EC3C /* NC1_Voice_memos_SAApp.swift */,
 				E2451EBB29253A0800DE8A0F /* Audio recorder.swift */,
 				E2D25497292B8DEE0040CBD8 /* Extensions.swift */,
+				E2F9F929292BCD9200CC51D5 /* RecordingDataModel.swift */,
+				E2F9F92B292BCF1800CC51D5 /* Helper.swift */,
 				E24921962927E235005BE48C /* View */,
-				E249219029268FB7005BE48C /* Recording1View.swift */,
-				E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */,
 				E26B2688292520520058EC3C /* Assets.xcassets */,
 				E26B268A292520520058EC3C /* Preview Content */,
 			);
@@ -159,10 +167,12 @@
 			files = (
 				E26B2687292520510058EC3C /* ContentView.swift in Sources */,
 				E2D25498292B8DEE0040CBD8 /* Extensions.swift in Sources */,
+				E2F9F92A292BCD9200CC51D5 /* RecordingDataModel.swift in Sources */,
 				E2451EBC29253A0800DE8A0F /* Audio recorder.swift in Sources */,
 				E26B2685292520510058EC3C /* NC1_Voice_memos_SAApp.swift in Sources */,
 				E249219129268FB7005BE48C /* Recording1View.swift in Sources */,
 				E2451EBE29253E4B00DE8A0F /* RecordingsList.swift in Sources */,
+				E2F9F92C292BCF1800CC51D5 /* Helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,12 +301,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NC1 Voice memos SA/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XGGT273AF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_FILE = "NC1-Voice-memos-SA-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,12 +332,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NC1 Voice memos SA/Preview Content\"";
+				DEVELOPMENT_TEAM = 3XGGT273AF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
+				INFOPLIST_FILE = "NC1-Voice-memos-SA-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

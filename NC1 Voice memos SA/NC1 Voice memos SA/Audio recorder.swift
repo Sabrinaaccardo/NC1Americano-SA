@@ -20,7 +20,9 @@ class AudioRecorder: ObservableObject {
                     print("Failed to set up recording session")
                 }
         let documentPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+        
         let audioFilename = documentPath.appendingPathComponent("\(Date().toString(dateFormat: "dd-MM-YY_'at'_HH:mm:ss")).m4a")
+        
         let settings = [
                     AVFormatIDKey: Int(kAudioFormatMPEG4AAC),
                     AVSampleRateKey: 12000,
@@ -28,8 +30,8 @@ class AudioRecorder: ObservableObject {
                     AVEncoderAudioQualityKey: AVAudioQuality.high.rawValue
                 ]
         do {
-                    audioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
-                    audioRecorder.record()
+                    AudioRecorder = try AVAudioRecorder(url: audioFilename, settings: settings)
+                    AudioRecorder.record()
                     recording = true
                 } catch {
                     print("Could not start recording")
@@ -37,16 +39,17 @@ class AudioRecorder: ObservableObject {
                 }
         }
     
+    func stopRecording() {
+            AudioRecorder.stop()
+            recording = false
+        }
+    
     
     let objectWillChange = PassthroughSubject<AudioRecorder, Never>()
-    var audioRecorder: AVAudioRecorder!
+    var AudioRecorder: AVAudioRecorder!
     var recording = false {
             didSet {
                 objectWillChange.send(self)
             }
         }
-    
-    
-    
-    
 }
