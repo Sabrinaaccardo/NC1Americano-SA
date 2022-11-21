@@ -14,6 +14,7 @@
 		E26B2687292520510058EC3C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E26B2686292520510058EC3C /* ContentView.swift */; };
 		E26B2689292520520058EC3C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26B2688292520520058EC3C /* Assets.xcassets */; };
 		E26B268C292520520058EC3C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E26B268B292520520058EC3C /* Preview Assets.xcassets */; };
+		E2D25498292B8DEE0040CBD8 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D25497292B8DEE0040CBD8 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E26B2686292520510058EC3C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E26B2688292520520058EC3C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E26B268B292520520058EC3C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2D25497292B8DEE0040CBD8 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +69,7 @@
 			children = (
 				E26B2684292520510058EC3C /* NC1_Voice_memos_SAApp.swift */,
 				E2451EBB29253A0800DE8A0F /* Audio recorder.swift */,
+				E2D25497292B8DEE0040CBD8 /* Extensions.swift */,
 				E24921962927E235005BE48C /* View */,
 				E249219029268FB7005BE48C /* Recording1View.swift */,
 				E2451EBD29253E4B00DE8A0F /* RecordingsList.swift */,
@@ -155,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E26B2687292520510058EC3C /* ContentView.swift in Sources */,
+				E2D25498292B8DEE0040CBD8 /* Extensions.swift in Sources */,
 				E2451EBC29253A0800DE8A0F /* Audio recorder.swift in Sources */,
 				E26B2685292520510058EC3C /* NC1_Voice_memos_SAApp.swift in Sources */,
 				E249219129268FB7005BE48C /* Recording1View.swift in Sources */,

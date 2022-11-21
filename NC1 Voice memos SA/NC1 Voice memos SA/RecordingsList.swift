@@ -12,7 +12,7 @@ struct RecordingsList: View {
     var body: some View {
         
         Form {
-            ForEach (1..<11) { number in
+            ForEach (1..<6) { number in
                 NavigationLink(destination: Voice_Memos(name: "Recording \(number)")){
                     Text ("Recording \(number)")
                    }
