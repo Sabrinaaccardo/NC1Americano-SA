@@ -13,31 +13,48 @@ struct Voice_Memos: View {
     @State var name : String
     var body: some View {
         VStack {
-
+            
             Text(name)
                 .font(.largeTitle)
-            .fontWeight(.bold)
-            
-           
-                
-            .padding () //spazio tra il bezel e il title
-           
+                .fontWeight(.bold)
+                .padding () //spazio tra il bezel e il title
             Spacer()
+            
+                HStack{
+                    Spacer()
+                    Slider(value: $sliderValue, in: 0...10)
+                       } // end of HStack
             HStack{
-                Spacer()
-                Slider(value: $sliderValue, in: 0...10)
-                
-      } // end of HStack
+                Button(action:{ })
+                {Image(systemName: "goforward.15")
+                    }
+                Button(action:{ })
+                {Image(systemName: "play.fill") }
+              
+                Button(action:{ })
+                {Image(systemName: "gobackward.15") }
+            }
             
-            Spacer() //mette il title sopra
             
             
-                
-            }//end of VStack
+            
+            Spacer() //sposta lo slider al centro
+            
+            
+            
+            
+        }//end of VStack
+        
+        
+        
+        
+          }
+    
+    
+    
         }
         
         
-        }
 
 struct Voice_Memos_Previews: PreviewProvider {
     static var previews: some View {

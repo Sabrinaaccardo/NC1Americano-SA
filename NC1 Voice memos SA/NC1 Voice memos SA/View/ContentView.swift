@@ -14,6 +14,7 @@ struct ContentView: View {
     @ObservedObject var audioRecorder: AudioRecorder
     
     var body: some View {
+        
 
         NavigationView {
           VStack {
@@ -36,7 +37,9 @@ struct ContentView: View {
                             }
                        }
                   } else {
-                    Button(action: {self.audioRecorder.stopRecording()})
+                    Button(action: {
+                        self.audioRecorder.stopRecording()
+                    })
                       {
                         Image(systemName: "stop.fill")
                             .resizable()

@@ -7,65 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A8EDE8E7-60F2-4EE2-A796-9CC6942D0775"
+            uuid = "5A10C51D-A789-4DE0-9135-10BB41363D97"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "NC1 Voice memos SA/View/ContentView.swift"
+            filePath = "NC1 Voice memos SA/View/Player.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "ContentView"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "A8EDE8E7-60F2-4EE2-A796-9CC6942D0775 - ef549814369dd804"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NC1_Voice_memos_SA.ContentView.body.getter : some"
-                  moduleName = "NC1 Voice memos SA"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sabrinaaccardo/Documents/GitHub/NC1Americano-SA/NC1%20Voice%20memos%20SA/NC1%20Voice%20memos%20SA/View/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "17"
-                  endingLineNumber = "17"
-                  offsetFromSymbolStart = "232">
-               </Location>
-               <Location
-                  uuid = "A8EDE8E7-60F2-4EE2-A796-9CC6942D0775 - ef549814369dd825"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "NC1_Voice_memos_SA.ContentView.body.getter : some"
-                  moduleName = "NC1 Voice memos SA"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/sabrinaaccardo/Documents/GitHub/NC1Americano-SA/NC1%20Voice%20memos%20SA/NC1%20Voice%20memos%20SA/View/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "568">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "6F88C13D-6945-478B-8147-738C49241942"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "NC1 Voice memos SA/Audio recorder.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "stopRecording()"
-            landmarkType = "7">
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "AVPlayer"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

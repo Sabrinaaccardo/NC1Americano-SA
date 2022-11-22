@@ -11,7 +11,6 @@ import SwiftUI
 
 struct NC1_Voice_memos_SAApp: App {
     
-    let contentView = ContentView(audioRecorder: AudioRecorder())
 
     var body: some Scene {
         

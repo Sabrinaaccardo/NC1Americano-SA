@@ -9,9 +9,8 @@ import Foundation
 import SwiftUI
 import Combine
 import AVFoundation
+
 class AudioRecorder: ObservableObject {
-    
-    
     func startRecording() {
         let recordingSession = AVAudioSession.sharedInstance()
         do {
@@ -41,9 +40,10 @@ class AudioRecorder: ObservableObject {
         }
     
     func stopRecording() {
-            AudioRecorder.stop()
-            recording = false
-        }
+        
+        AudioRecorder.stop()
+        recording = false
+    }
     
     
     let objectWillChange = PassthroughSubject<AudioRecorder, Never>()
